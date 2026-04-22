@@ -18,7 +18,7 @@
 
     
  
-<title>BMO Robot - Elan Berezovskiy's Website</title>
+<title>Hackjam 2025 - Elan Berezovskiy's Website</title>
 
 
 <link href="../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
@@ -156,7 +156,9 @@
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
-        <span class="terminal-mkdocs-side-nav-item--active">BMO Robot</span>
+        
+            <a class="terminal-mkdocs-side-nav-item" href="../bmo-robot/">BMO Robot</a>
+        
     
     </li>
             
@@ -167,9 +169,7 @@
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
-        
-            <a class="terminal-mkdocs-side-nav-item" href="../hackjam-2025/">Hackjam 2025</a>
-        
+        <span class="terminal-mkdocs-side-nav-item--active">Hackjam 2025</span>
     
     </li>
             
@@ -183,38 +183,32 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#bmo-the-line-following-arduino-robot">BMO: The Line-Following Arduino Robot</a></li>
-        <li><a href="#bb-era-before-bmo">BB Era (Before BMO)</a></li>
-        <li><a href="#ab-era-after-bmo">AB Era (After BMO)</a></li>
-        <li><a href="#final-prototype">Final Prototype</a></li>
-        <li><a href="#changes-made-given-more-time">Changes Made Given More Time</a></li>
-        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#hackjam-2025-my-first-hackathon-that-we-also-won">Hackjam 2025: My First Hackathon (That We Also Won)</a></li>
+        <li><a href="#planning-the-project">Planning the Project</a></li>
+        <li><a href="#going-into-motion">Going into Motion</a></li>
+        <li><a href="#the-final-product">The Final Product</a></li>
         
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h1 id="bmo-the-line-following-arduino-robot">BMO: The Line-Following Arduino Robot<a class="headerlink" href="#bmo-the-line-following-arduino-robot" title="Permanent link">#</a></h1>
-<p><a href="https://youtube.com/embed/yawRlPYDACI"><img alt="Final Prototype" src="https://img.youtube.com/vi/yawRlPYDACI/hqdefault.jpg" /></a></p>
-<p>In fall 2024, I recreated the loveable gaming handheld character, BMO, from Adventure Time! This project lasted from late August to late November and was accomplished by an interdisciplinary team of two computer science majors, one computer engineer, one mechanical engineer, and one chemical engineer. This took place in ENG3000L, Foundations of Engineering Lab, at USF.</p>
-<p>As the project lead, my main priority was ensuring the team prototyped and developed the robot smoothly, taking in everyones' thoughts and opinions and communicating with teaching assistants and the professor for instruction and feedback.</p>
-<h1 id="bb-era-before-bmo">BB Era (Before BMO)<a class="headerlink" href="#bb-era-before-bmo" title="Permanent link">#</a></h1>
-<p><a href="https://youtube.com/embed/6aQdSMt-_SA"><img alt="Origami Bot" src="https://img.youtube.com/vi/6aQdSMt-_SA/hqdefault.jpg" /></a></p>
-<p>Before the robot was realized into BMO, my team and I protyped our own robots made from cardstock (an "origami bot"). These robots were simple in design, had an open top, and were programmed to simply go forward, turn on each side, then go backwards. There were a number of issues, such as batteries weighing down the chassis too much, lack of chassis integrity, and inconsistent wire connections. Sometimes, the bot would even work.</p>
-<p>However, despite these issues, it formed the base for the team's understanding of how to put together compontents together to form a working robot.</p>
-<h1 id="ab-era-after-bmo">AB Era (After BMO)<a class="headerlink" href="#ab-era-after-bmo" title="Permanent link">#</a></h1>
-<p>The next step for the team was to narrow down designs. It came down to two: BMO from Adventure Time, and the Krabby Patty Car from Spongebob. Since the project case was to design a robot for K-12 educational purposes, both designs came from cartoon shows to be as recognizeable as possible. Though we considered both strongly, we found that BMO would provide us with greater flexibility in technical features, but also a simplified design to avoid overengineering the chassis.</p>
-<p><img alt="Final Candidate Desgins" src="../img/final%20candidates.png" /></p>
-<h1 id="final-prototype">Final Prototype<a class="headerlink" href="#final-prototype" title="Permanent link">#</a></h1>
-<p>Once the candidate design was selected, my team and I finished the internals of BMO. One of the key steps was actually rotating BMO to be horizontal instead of vertical. While BMO is normally a character that stands, functionally, it left us with little room to insert circuitry. BMO was designed to have a shell system, where a shell would sit onto a base with tight margins to secure the shell to the base naturally. We also added a shelf insert to maximize BMO's vertical height. Other additions from the candidate are wider gaps for the wheels, a larger gap for the IR sensors for line-following, and holes in the base to ziptie the motors. Finally, the last addition: a pizeoelectric speaker. When BMO receives power, a startup sequence plays before BMO begins line-following. It can be heard in the video at the top of the page, but it is a bit quiet.
-<img alt="Final BMO Desgins" src="../img/final%20designs.png" /></p>
-<h1 id="changes-made-given-more-time">Changes Made Given More Time<a class="headerlink" href="#changes-made-given-more-time" title="Permanent link">#</a></h1>
-<p>Due to the time constraints set by the course, we could not implement all the fixes for the final prototype that we had worked out. For example, BMO has a small footprint, but since time was low, we could not update the base size. Instead, we decided to increase the height of the shell to keep compatibility with the shell (an intentional design decision for situations like this). However, time was low and campus 3D printing was extremely busy, so we could not print the CAD design of the new shell.
-<img alt="Increased Shell Height" src="../img/increased%20shell%20height.png" /></p>
-<p>Another change we were prototyping was the speaker startup sequence. While the sequence sounds great, it was played very quiet. Pizeoelectric speakers were challenging to understand in Arduino programming in terms of audio output, as it was partially tied to note choice. Increasing the volume would have required a complete re-do of the sequence, which in turn, required testing notes from a list of 50 or so. We had a great sounding sequence, so we left it as is.</p>
-<h1 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h1>
-<p>Overall, working on BMO was fun, rewarding, and a fantastic learning experience. I learned how to design simple CAD models, how to work with Arduino hardware and software, and how to lead a team of engineers. It also led me to be more interested in embedded hardware, something I had previously not dealt with.</p>
+    <h1 id="hackjam-2025-my-first-hackathon-that-we-also-won">Hackjam 2025: My First Hackathon (That We Also Won)<a class="headerlink" href="#hackjam-2025-my-first-hackathon-that-we-also-won" title="Permanent link">#</a></h1>
+<p>During Fall 2025, I participated in my first ever hackathon, <a href="https://hackjam2025.devpost.com/">Hackjam 2025</a>. In a team of three with <a href="https://www.linkedin.com/in/robert-french-teal-mango?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNXu6fsmUScKItZNh4kfy0Q%3D%3D">Robert French</a> and <a href="https://www.linkedin.com/in/nguyen-phuc-tran-0000b0381?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTVvm%2FbF1Q0e4X6oDDIlgbA%3D%3D">Nguyen Phuc Tran</a>. Hackjam is a beginner-friendly, less than 24 hour hackathon hosted by the Society of Hispanic Professionals and Engineers (SHPE). Going into it, I had no idea what to expect, but I was certainly surprised.</p>
+<p>Ultimately, we created a login portal for a Scottish travel website, which played lovely music if you did not login fast enough. Check it out <a href="https://devpost.com/software/hackjam-2025-scottish-travel-portal">here</a>!</p>
+<h1 id="planning-the-project">Planning the Project<a class="headerlink" href="#planning-the-project" title="Permanent link">#</a></h1>
+<p>There were three tracks that were available in Hackjam 2025: </p>
+<ul>
+<li>Track #1. Tech for Good / USF: Create a Tech Solution that improves life at USD</li>
+<li>Track #2. AI Innovation / Everyday AI: Build a creative AI-powered solution that makes everyday life simpler, smarter, or more engaging.</li>
+<li>Track #3. Worst UI Design: Take a standard login screen and turn it into the most annoying, funny, and over-complicated experience possible.</li>
+</ul>
+<p>You might have heard of the joke before, "Graphics design is my passion," when the reality is that you're terrible at designing graphics. I knew that I could channel that idea into creating the worst UI design for a login page. I recently had heard the "Scotland Forever" audio, which literally says "Scotland Forever" repeatedly with very loud bagpipes playing in the background. This was our basis for the login page.</p>
+<h1 id="going-into-motion">Going into Motion<a class="headerlink" href="#going-into-motion" title="Permanent link">#</a></h1>
+<p>Once I got the idea, Robert and Tran worked on coding a simple HTMl and Javascript website (with some help of Github Copilot). During that time, I worked on editing the audio to make it even more of an annoyance once it plays.</p>
+<h1 id="the-final-product">The Final Product<a class="headerlink" href="#the-final-product" title="Permanent link">#</a></h1>
+<p>After making the login page very annoying, we set about a 20-30 second timer once you enter the login page before the audio goes on, so as to make it a challenge to avoid the "Scotland Forever" audio. Furthermore, we themed the login page to be a Scottish travel portal, sort of like a travel agency but for specifically Scotland.</p>
+<p>Once we submitted the project in the afternoon, Robert and I both left to do more homework, while Tran stayed in the area to also do homework. Later that evening, I received a message that we actually won! This was very surprised, as I didn't expect my joke of an idea would actually help us win the track. Nonetheless, it shows to me that all ideas need to be considered, and to not count something out just because it seems ridiculous.</p>
 </section>
 
             </main>
@@ -228,9 +222,8 @@
         </div>
         <div id="terminal-mkdocs-footer-prev-next">
             <nav class="btn-group">
-                <a href=".." title="Home">Previous</a>
-                |
-                <a href="../hackjam-2025/" title="Hackjam 2025">Next</a>
+                <a href="../bmo-robot/" title="BMO Robot">Previous</a>
+                
             </nav>
         </div>
     </div>
